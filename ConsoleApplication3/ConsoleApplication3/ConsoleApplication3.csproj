@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A35E83FF-CD3B-4C7B-8BE6-91271395774D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication3</RootNamespace>
+    <AssemblyName>ConsoleApplication3</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\setup\log4net-1.2.11-bin-newkey\log4net-1.2.11\bin\net\3.5\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DotNetOpenEmail\AbstractEmailAttachment.cs" />
+    <Compile Include="DotNetOpenEmail\AssemblyInfo.cs" />
+    <Compile Include="DotNetOpenEmail\EhloSmtpResponse.cs" />
+    <Compile Include="DotNetOpenEmail\EmailAddress.cs" />
+    <Compile Include="DotNetOpenEmail\EmailAddressCollection.cs" />
+    <Compile Include="DotNetOpenEmail\EmailMessage.cs" />
+    <Compile Include="DotNetOpenEmail\Encoding\Base64Encoder.cs" />
+    <Compile Include="DotNetOpenEmail\Encoding\DoNothingEncoder.cs" />
+    <Compile Include="DotNetOpenEmail\Encoding\EightBitEncoder.cs" />
+    <Compile Include="DotNetOpenEmail\Encoding\EncoderFactory.cs" />
+    <Compile Include="DotNetOpenEmail\Encoding\EncodingType.cs" />
+    <Compile Include="DotNetOpenEmail\Encoding\IEncoder.cs" />
+    <Compile Include="DotNetOpenEmail\Encoding\QPEncoder.cs" />
+    <Compile Include="DotNetOpenEmail\Encoding\SevenBitEncoder.cs" />
+    <Compile Include="DotNetOpenEmail\FileAttachment.cs" />
+    <Compile Include="DotNetOpenEmail\GenericSmtpNegotiator.cs" />
+    <Compile Include="DotNetOpenEmail\HtmlAttachment.cs" />
+    <Compile Include="DotNetOpenEmail\IEmailStringable.cs" />
+    <Compile Include="DotNetOpenEmail\ISendableMessage.cs" />
+    <Compile Include="DotNetOpenEmail\ISmtpProxy.cs" />
+    <Compile Include="DotNetOpenEmail\Logging\Logger.cs" />
+    <Compile Include="DotNetOpenEmail\Logging\LogMessage.cs" />
+    <Compile Include="DotNetOpenEmail\MailException.cs" />
+    <Compile Include="DotNetOpenEmail\MessageHeader.cs" />
+    <Compile Include="DotNetOpenEmail\MessageHeaderCollection.cs" />
+    <Compile Include="DotNetOpenEmail\MimeBoundary.cs" />
+    <Compile Include="DotNetOpenEmail\MimeContainer.cs" />
+    <Compile Include="DotNetOpenEmail\RawEmailMessage.cs" />
+    <Compile Include="DotNetOpenEmail\Resources\ARM.cs" />
+    <Compile Include="DotNetOpenEmail\RFC2822Date.cs" />
+    <Compile Include="DotNetOpenEmail\Smtpauth\ISmtpAuthToken.cs" />
+    <Compile Include="DotNetOpenEmail\Smtpauth\LoginAuthToken.cs" />
+    <Compile Include="DotNetOpenEmail\Smtpauth\SmtpAuthFactory.cs" />
+    <Compile Include="DotNetOpenEmail\Smtpauth\SmtpAuthToken.cs" />
+    <Compile Include="DotNetOpenEmail\Smtpauth\SmtpAuthType.cs" />
+    <Compile Include="DotNetOpenEmail\SmtpException.cs" />
+    <Compile Include="DotNetOpenEmail\SmtpProxy.cs" />
+    <Compile Include="DotNetOpenEmail\SmtpResponse.cs" />
+    <Compile Include="DotNetOpenEmail\SmtpResponseCode.cs" />
+    <Compile Include="DotNetOpenEmail\SmtpServer.cs" />
+    <Compile Include="DotNetOpenEmail\TextAttachment.cs" />
+    <Compile Include="DotNetOpenEmail\Utils\BinaryStreamUtil.cs" />
+    <Compile Include="DotNetOpenEmail\Utils\Configuration.cs" />
+    <Compile Include="DotNetOpenEmail\Utils\EmailAddressParser.cs" />
+    <Compile Include="DotNetOpenEmail\Utils\VersionInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Program1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DotNetOpenEmail\Resources\DotNetOpenMail.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\bin\Debug\log4net.dll
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\bin\Debug\log4net.xml
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\obj\Debug\ResolveAssemblyReference.cache
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.DotNetOpenEmail.Resources.DotNetOpenMail.resources
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csproj.GenerateResource.Cache
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+D:\SampleApps\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
